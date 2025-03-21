@@ -1,0 +1,84 @@
+@import url("reset.css");
+
+header {
+	color: brown;
+}
+
+.nav {
+	color: aqua;
+}
+
+p {
+	color: rgb(134, 69, 51);
+}
+
+h2 {
+	color: darkmagenta !important
+}
+
+li>p {
+	color: darkblue;
+}
+
+.text {
+	color: #a0f0fc;
+}
+
+[class*=tex] {
+	color: chartreuse;
+}
+
+div.text {
+	color: darkseagreen
+}
+
+a[class*=link]>span {
+	color: aqua;
+}
+
+p+ul>li {
+	color: chocolate;
+}
+
+.text mark {
+	color: darkred
+}
+
+
+text,
+link {
+	color: gold;
+}
+
+div.text {
+	color: #4597f7;
+}
+
+
+#additional-hw>*>li {
+	color: red;
+}
+
+#additional-hw>*>li~li {
+	color: green;
+}
+
+#additional-hw>*>li>*>li {
+	color: blue;
+}
+
+#additional-hw>*>li>*>li~li {
+	color: orange;
+}
+
+#additional-hw>*>li>*>li>*>li {
+	color: #4597f7;
+}
+
+#additional-hw>*>li>*>li>*>li~li {
+	color: #5d5d5d;
+}
+
+#additional-hw>*>li>*>li>span {
+	color: #a0f0fc;
+}
