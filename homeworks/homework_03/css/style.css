@@ -28,15 +28,11 @@ li>p {
 	color: chartreuse;
 }
 
-div.text {
+h3.text {
 	color: darkseagreen
 }
 
-a[class*=link]>span {
-	color: aqua;
-}
-
-p+ul>li {
+h2+p {
 	color: chocolate;
 }
 
@@ -44,13 +40,12 @@ p+ul>li {
 	color: darkred
 }
 
-
 text,
 link {
 	color: gold;
 }
 
-div.text {
+p.text {
 	color: #4597f7;
 }
 
