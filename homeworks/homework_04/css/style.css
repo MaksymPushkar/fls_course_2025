@@ -1,0 +1,58 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap");
+
+body {
+	font-family: "GeForce", fantasy;
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	font-weight: 700;
+	color: rgba(0, 128, 0, 0.849);
+	text-decoration: underline rgb(4, 94, 4) double
+}
+
+#article h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-shadow: 10px 20px 10px rgb(5, 80, 9), 5px 10px 5px rgb(1, 37, 3), 50px 100px 10px rgb(1, 27, 2);
+	word-spacing: 200px
+}
+
+#article h3 {
+	font-size: 32px;
+}
+
+#article p {
+	font-style: italic;
+	text-transform: capitalize;
+	letter-spacing: 5px;
+	text-shadow: 10px 20px 10px rgb(5, 80, 9), 5px 10px 5px rgb(1, 37, 3);
+	white-space: nowrap
+}
+
+.ecobazar {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+}
+
+.ecobazar__title {
+	font-weight: 900;
+	font-size: 50px;
+	color: #00B207;
+	text-align: center;
+}
+
+.ecobazar__subtitle {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.ecobazar__text {
+	font-size: 18px;
+	text-align: justify;
+}
