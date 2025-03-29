@@ -1,0 +1,129 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 1.42858;
+	color: #737373;
+}
+
+.container {
+	max-width: 1072px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.our-advantages {
+	min-height: 100%;
+	background-color: #231F8B;
+}
+
+.our-advantages__container {
+	overflow: hidden;
+	padding-top: 5.2082%;
+	padding-bottom: 5.2082%;
+}
+
+.our-advantages__main {
+	max-width: 765px;
+	margin-bottom: 78px;
+}
+
+.our-advantages__label {
+	color: #5A54F2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.71429;
+	letter-spacing: 0.2px;
+	margin-bottom: 10px;
+}
+
+.our-advantages__title {
+	color: #FFF;
+	font-family: "Circular Std", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.27778;
+	margin-bottom: 10px;
+}
+
+.our-advantages__text {
+	color: #FFF;
+	font-family: "Circular Std", sans-serif;
+	font-weight: 450;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+}
+
+.our-advantages__items {
+	overflow: hidden;
+	font-size: 0;
+	margin: -20px;
+}
+
+.our-advantages__item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.our-advantages__item_mt {
+	margin-top: 48px;
+}
+
+.our-advantages__item-content {
+	width: 230px;
+	background-color: #FFF;
+	box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+	padding: 35px 40px;
+}
+
+.our-advantages__item-content_blue {
+	background: #5A54F2;
+}
+
+.our-advantages__item-img {
+	width: 72px;
+	height: 72px;
+	margin-bottom: 20px;
+}
+
+.our-advantages__item-img>img {
+	max-height: 100%;
+}
+
+.our-advantages__item-title {
+	color: #252B42;
+	font-family: "Circular Std", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	margin-bottom: 20px;
+}
+
+.our-advantages__item-content_blue .our-advantages__item-title {
+	color: #FFFFFF;
+}
+
+.our-advantages__item-line {
+	background-color: #E74040;
+	width: 50px;
+	height: 2px;
+	margin-bottom: 20px;
+}
+
+.our-advantages__item-content_blue .our-advantages__item-line {
+	background-color: #FFFFFF;
+}
+
+.our-advantages__itme-text {
+	font-size: 14px;
+	letter-spacing: 0.2px;
+}
+
+.our-advantages__item-content_blue .our-advantages__itme-text {
+	color: #FFFFFF;
+}
