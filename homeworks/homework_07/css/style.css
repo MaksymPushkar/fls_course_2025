@@ -1,0 +1,265 @@
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 22px;
+	line-height: normal;
+	color: #412672;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {}
+
+.page {}
+
+.professional-faculty {
+	background: #412672;
+}
+
+.professional-faculty__body {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+.professional-faculty__body>*:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.professional-faculty__container {}
+
+.professional-faculty__title {
+	color: #FFF;
+	font-size: 38px;
+}
+
+.professional-faculty__title strong {
+	font-weight: 700;
+}
+
+.professional-faculty__row {
+	font-size: 0;
+	margin: -10px;
+}
+
+.professional-faculty__row-item {
+	display: inline-block;
+	max-width: 406px;
+	height: 496px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.professional-faculty__col {
+	height: 100%;
+	overflow: auto;
+	padding: 20px;
+	background: #FFF;
+	box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.professional-faculty__col:hover {
+	background: #FFBE48;
+}
+
+.professional-faculty__col>*:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.professional-faculty__col img {
+	width: 100%;
+}
+
+.professional-faculty__col h3 {
+	color: #000;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.professional-faculty__col p {
+	color: #4F4F4F;
+	font-size: 15px;
+	line-height: 1.26667;
+}
+
+.professional-faculty__col a {
+	color: #FE3F3F;
+	font-size: 15px;
+	line-height: 1.26667;
+}
+
+.professional-faculty__col a:hover {
+	text-decoration: underline;
+}
+
+.now-available-in-california {}
+
+.now-available-in-california__container {}
+
+.now-available-in-california__body {
+	max-width: 518px;
+	padding-top: 153px;
+	padding-bottom: 137px;
+}
+
+.now-available-in-california__body>*:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.now-available-in-california__body h2 {
+	font-size: 34px;
+}
+
+.now-available-in-california__body h2 strong {
+	font-weight: 700;
+}
+
+.now-available-in-california__body p {
+	font-size: 22px;
+}
+
+.now-available-in-california__body ul {
+	color: #4F4F4F;
+	font-size: 20px;
+	padding-top: 13.5px;
+	padding-bottom: 11px;
+	padding-left: 44px;
+	line-height: 1.45;
+}
+
+.now-available-in-california__body ul li {}
+
+.now-available-in-california__body ul li::before {
+	content: "";
+	display: inline-block;
+	width: 44px;
+	height: 29px;
+	background: url(../img/check.svg) no-repeat;
+	margin-left: -44px;
+	padding-right: 14px;
+	vertical-align: top;
+}
+
+.now-available-in-california__body ul li:not(:last-child) {
+	margin-bottom: 22px;
+}
+
+.game {
+	border-top: 1px solid #000;
+}
+
+.game__container {
+	max-width: 1030px;
+}
+
+.game__body {
+	height: 660px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.game__body>*:not(:last-child) {
+	margin-bottom: 40px
+}
+
+.game__title {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+
+.game__box>*:not(:first-child) {
+	visibility: hidden;
+	background: #FFBE48;
+	text-align: center;
+}
+
+.game__box>*:hover {
+	visibility: visible;
+}
+
+.game__box>*:hover+* {
+	visibility: visible;
+}
+
+.game__item-1 {
+	opacity: 1;
+	color: #FFF;
+	text-align: center;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	background: #412672;
+}
+
+.game__item-2 {
+	height: 50px;
+	width: 50px;
+	margin-left: 25px;
+}
+
+.game__item-3 {
+	height: 150px;
+	width: 50px;
+	margin-left: 25px;
+}
+
+.game__item-4 {
+	height: 25px;
+	width: 250px;
+	margin-left: 25px;
+}
+
+.game__item-5 {
+	height: 250px;
+	width: 250px;
+	margin-left: 275px;
+	margin-top: -250px;
+}
+
+.game__item-6 {
+	height: 25px;
+	width: 100px;
+	margin-left: 175px;
+	margin-top: -25px;
+}
+
+.game__item-7 {
+	height: 80px;
+	width: 100px;
+	margin-left: 275px;
+	margin-top: -80px;
+}
+
+.game__item-8 {
+	height: 1px;
+	width: 300px;
+	margin-left: 375px;
+	margin-top: -1px;
+}
+
+.game__item-9 {
+	height: 80px;
+	width: 150px;
+	margin-left: 675px;
+	margin-top: -70px;
+}
+
+.game__box>img {
+	width: 400px;
+	margin-left: 180px;
+	margin-top: -420px;
+}
+
+.footer {}
