@@ -1,0 +1,49 @@
+@import url("reset.css");
+
+body {
+	font-family: fantasy;
+	font-size: 22px;
+	line-height: normal;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {
+	padding: 20px;
+	text-align: center;
+	font-size: 50px;
+}
+
+.page {}
+
+.board {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.board__list {
+	border: 10px solid black;
+	border-radius: 20px;
+	padding: 30px;
+	background-color: gray;
+}
+
+.board__list>li:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.img-tourist {
+	border-radius: 150px 0px;
+}
+
+.footer {}
