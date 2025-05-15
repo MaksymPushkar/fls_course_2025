@@ -1,0 +1,349 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="container"] {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.page {}
+
+.properties {
+	padding: 30px 0;
+}
+
+.properties__container {}
+
+.properties__container>*:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.properties__title {}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.properties__items {
+	font-size: 0;
+	margin: -20px 0;
+}
+
+.properties__item {
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
+	vertical-align: top;
+	max-width: 260px;
+}
+
+.item-property {}
+
+.item-property>*:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.item-property__label {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.item-property__object-body {
+	background-color: rgba(128, 128, 128, 0.5);
+	height: 220px;
+	width: 220px;
+	padding: 10px;
+	perspective: 1000px;
+}
+
+.item-property__object {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 128, 0, 0.8);
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	line-height: 1;
+	padding: 75px 0;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+.item-property__object--translated {}
+
+.item-property__object-body:hover>.item-property__object--translated {
+	transform: translate(50%, -50px);
+}
+
+.item-property__object--scaled {}
+
+.item-property__object-body:hover>.item-property__object--scaled {
+	transform: scale(200%, 25%);
+}
+
+.item-property__object--rotated {}
+
+.item-property__object-body:hover>.item-property__object--rotated {
+	transform: rotate(60deg);
+}
+
+.item-property__object--rotated-x {}
+
+.item-property__object-body:hover>.item-property__object--rotated-x {
+	transform: rotateX(60deg);
+}
+
+.item-property__object--rotated-y {}
+
+.item-property__object-body:hover>.item-property__object--rotated-y {
+	transform: rotateY(60deg);
+}
+
+.item-property__object--skewed {}
+
+.item-property__object-body:hover>.item-property__object--skewed {
+	transform: skew(50deg, 25deg);
+}
+
+.item-property__object--matrix {}
+
+.item-property__object-body:hover>.item-property__object--matrix {
+	transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);
+}
+
+.item-property__object--origin-right-top {}
+
+.item-property__object-body:hover>.item-property__object--origin-right-top {
+	transform-origin: 100% 0;
+}
+
+.object3d {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	transition: all 0.5s ease 0s;
+	transform-style: preserve-3d
+}
+
+.object3d--translated {}
+
+.item-property__object-body:hover>.object3d--translated {
+	translate: 620px -62px -335px;
+}
+
+.object3d--scaled {}
+
+.item-property__object-body:hover>.object3d--scaled {
+	scale: 3 0.5 7;
+}
+
+.object3d--rotated {}
+
+.item-property__object-body:hover>.object3d--rotated {
+	transform: rotate3d(154, 50, 75, 154deg);
+}
+
+.object3d--matrix {}
+
+.item-property__object-body:hover>.object3d--matrix {
+	transform: rotate3d(154, 50, 75, 154deg) translate3d(-120px, -62px, -335px) scale3d(3, 0.5, 7);
+}
+
+.object3d__side {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 128, 0, 0.8);
+	background: radial-gradient(circle, rgba(0, 138, 0, 0.2) 0%, rgba(0, 118, 0, 0.7) 100%);
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	line-height: 1;
+	padding: 75px 0;
+	text-transform: uppercase;
+	backface-visibility: visible;
+}
+
+.object3d__side--front {
+	transform: translateZ(100px);
+}
+
+.object3d__side--right {
+	transform: translateX(100px) rotateY(90deg);
+}
+
+.object3d__side--back {
+	transform: rotateY(180deg) translateZ(100px);
+}
+
+.object3d__side--left {
+	transform: translateX(-100px) rotateY(-90deg);
+}
+
+.object3d__side--top {
+	transform: translateY(-100px) rotateX(-90deg);
+}
+
+.object3d__side--bottom {
+	transform: translateY(100px) rotateX(-90deg) rotateY(-180deg);
+}
+
+.object3d--bv {}
+
+.object3d__side--bv-front {
+	backface-visibility: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+.object3d__side--bv-back {
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	transition: all 0.5s ease 0s;
+}
+
+
+.item-property__object-body:hover>.object3d--bv>.object3d__side--bv-front {
+	transform: rotateY(180deg);
+}
+
+.item-property__object-body:hover>.object3d--bv>.object3d__side--bv-back {
+	transform: rotateY(360deg);
+}
+
+.transport {
+	padding: 50px 0;
+}
+
+.transport__container {}
+
+.transport__container>*:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.transport__title {}
+
+/* transport */
+.tractor {
+	position: relative;
+	height: 600px;
+	width: 1000px;
+}
+
+.tractor__body {
+	position: absolute;
+	height: 250px;
+	width: 600px;
+	left: 200px;
+	background: gold;
+	border-radius: 10% 40% 5% 20% / 20% 40% 25% 20%;
+	z-index: -1;
+}
+
+.tractor__body::after {
+	content: "";
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	bottom: 0;
+	background: rgb(255, 187, 0);
+	border-radius: 20% 40% 5% 20% / 20% 30% 25% 20%;
+	z-index: -1;
+}
+
+.wheel {
+	position: absolute;
+	background: black;
+	height: 300px;
+	width: 300px;
+	left: -50px;
+	bottom: -100px;
+	border-radius: 50%;
+	border: 20px dashed black;
+	background-clip: padding-box;
+}
+
+.wheel--small {
+	position: absolute;
+	left: auto;
+	right: -25px;
+	bottom: -100px;
+	height: 200px;
+	width: 200px;
+	border-width: 15px;
+}
+
+.wheel__disc {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: gold;
+	transform: translate(-50%, -50%);
+}
+
+.wheel--small .wheel__disc {
+	height: 100px;
+	width: 100px;
+}
+
+.wheel__bolt {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: black;
+	transform: translate(-50%, -50%);
+}
+
+.tractor__cabin {
+	position: relative;
+	left: 250px;
+	font-size: 0;
+	height: 270px;
+	width: 300px;
+}
+
+.cabin__top {
+	height: 20px;
+	width: 250px;
+	background: gold;
+	border-radius: 10% 10% 0% 0% / 100% 100% 0% 0%;
+}
+
+
+.cabin__glass {
+	display: inline-block;
+	background: aqua;
+	width: 100px;
+	height: 250px;
+	border: 10px solid black;
+	border-right: 5px solid black;
+}
+
+.cabin__glass--right {
+	width: 150px;
+	border-right: 10px solid black;
+	border-left: 5px solid black;
+}

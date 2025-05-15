@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Домашня робота №11</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="properties">
+				<div class="properties__container">
+					<h2 class="properties__title title">Properties</h2>
+					<div class="properties__items">
+						<div class="properties__item item-property">
+							<div class="item-property__label">translate(x, y)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--translated">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">scale(x, y)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--scaled">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">rotate(deg)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--rotated">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">rotateX(deg)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--rotated-x">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">rotateY(deg)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--rotated-y">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">skew(deg, deg)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--skewed">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">matrix(a, c, b, d, x, y)</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--matrix">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">origin + rotate</div>
+							<div class="item-property__object-body">
+								<div class="item-property__object item-property__object--rotated item-property__object--origin-right-top">p</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">translate3d(x, y, z)</div>
+							<div class="item-property__object-body">
+								<div class="object3d object3d--translated">
+									<div class="object3d__side object3d__side--front">1</div>
+									<div class="object3d__side object3d__side--right">2</div>
+									<div class="object3d__side object3d__side--back">3</div>
+									<div class="object3d__side object3d__side--left">4</div>
+									<div class="object3d__side object3d__side--top">5</div>
+									<div class="object3d__side object3d__side--bottom">6</div>
+								</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">scale3d(x, y, z)</div>
+							<div class="item-property__object-body">
+								<div class="object3d object3d--scaled">
+									<div class="object3d__side object3d__side--front">1</div>
+									<div class="object3d__side object3d__side--right">2</div>
+									<div class="object3d__side object3d__side--back">3</div>
+									<div class="object3d__side object3d__side--left">4</div>
+									<div class="object3d__side object3d__side--top">5</div>
+									<div class="object3d__side object3d__side--bottom">6</div>
+								</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">rotate3d(x, y, z)</div>
+							<div class="item-property__object-body">
+								<div class="object3d object3d--rotated">
+									<div class="object3d__side object3d__side--front">1</div>
+									<div class="object3d__side object3d__side--right">2</div>
+									<div class="object3d__side object3d__side--back">3</div>
+									<div class="object3d__side object3d__side--left">4</div>
+									<div class="object3d__side object3d__side--top">5</div>
+									<div class="object3d__side object3d__side--bottom">6</div>
+								</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">matrix3d(x, y, z)</div>
+							<div class="item-property__object-body">
+								<div class="object3d object3d--matrix">
+									<div class="object3d__side object3d__side--front">1</div>
+									<div class="object3d__side object3d__side--right">2</div>
+									<div class="object3d__side object3d__side--back">3</div>
+									<div class="object3d__side object3d__side--left">4</div>
+									<div class="object3d__side object3d__side--top">5</div>
+									<div class="object3d__side object3d__side--bottom">6</div>
+								</div>
+							</div>
+						</div>
+						<div class="properties__item item-property">
+							<div class="item-property__label">backface-visibility</div>
+							<div class="item-property__object-body">
+								<div class="object3d object3d--bv">
+									<div class="object3d__side object3d__side--bv-front">f</div>
+									<div class="object3d__side object3d__side--bv-back">b</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transport">
+				<div class="transport__container">
+					<div class="transport__title title">Tractor</div>
+					<div class="tractor">
+						<div class="tractor__cabin cabin">
+							<div class="cabin__top"></div>
+							<div class="cabin__glass"></div>
+							<div class="cabin__glass cabin__glass--right"></div>
+						</div>
+						<div class="tractor__body">
+							<div class="wheel">
+								<div class="wheel__disc">
+								</div>
+								<div class="wheel__bolt"></div>
+							</div>
+							<div class="wheel wheel--small">
+								<div class="wheel__disc">
+								</div>
+								<div class="wheel__bolt"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
