@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Homework 14</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<h2 class="header__title title">Homework 14</h2>
+			</header>
+			<main class="page">
+				<div class="order">
+					<form action="#" method="post" class="order__container">
+						<div class="order__body">
+							<h2 class="order__title title">Billing Information</h2>
+							<div class="order__row">
+								<label class="order__label">
+									<span class="order__subtitle">First name</span>
+									<input required placeholder="Your first name" type="text" name="form[]" class="order__input">
+								</label>
+								<label class="order__label">
+									<span class="order__subtitle">Last name</span>
+									<input required placeholder="Your last name" type="text" name="form[]" class="order__input">
+								</label>
+								<label class="order__label">
+									<span class="order__subtitle">Company Name <span class="order__optional">(optional)</span></span>
+									<input placeholder="Company name" type="text" name="form[]" class="order__input">
+								</label>
+							</div>
+							<div class="order__row">
+								<label class="order__label">
+									<span class="order__subtitle">Street Address</span>
+									<input required placeholder="Email" type="text" name="form[]" class="order__input">
+								</label>
+							</div>
+							<div class="order__row">
+								<label class="order__label">
+									<span class="order__subtitle">Country / Region</span>
+									<select required name="form[select]" class="order__input">
+										<option value selected disabled hidden>Select</option>
+										<option value="1">United States</option>
+										<option value="2">United Kingdom</option>
+										<option value="3">Germany</option>
+									</select>
+								</label>
+								<label class="order__label">
+									<span class="order__subtitle">States</span>
+									<select required name="form[select2]" class="order__input">
+										<option value selected disabled hidden>Selects</option>
+										<option value="1">California</option>
+										<option value="2">Texas</option>
+										<option value="3">New York
+										</option>
+									</select>
+								</label>
+								<label class="order__label">
+									<span class="order__subtitle">Zip Code</span>
+									<input required placeholder="Zip Code" type="text" name="form[]" class="order__input">
+								</label>
+							</div>
+							<div class="order__row">
+								<label class="order__label">
+									<span class="order__subtitle">Email</span>
+									<input required placeholder="Email Address" type="email" name="form[]" class="order__input">
+								</label>
+								<label class="order__label">
+									<span class="order__subtitle">Phone</span>
+									<input required placeholder="Phone number" type="tel" name="form[]" class="order__input">
+								</label>
+							</div>
+							<div class="order__row">
+								<label class="order__checkbox">
+									<span>Ship to a different address</span>
+									<input type="checkbox" name="form[checkbox]">
+								</label>
+							</div>
+							<div class="order__line"></div>
+							<h2 class="order__title title">Additional Info</h2>
+							<div class="order__row">
+								<label class="order__label">
+									<span class="order__subtitle">Order Notes (Optional)</span>
+									<textarea placeholder="Notes about your order, e.g. special notes for delivery" name="form[]" class="order__input"></textarea>
+								</label>
+							</div>
+						</div>
+						<div class="order__right">
+							<div class="order__summary summary">
+								<h2 class="summary__title title">Order Summery</h2>
+								<div class="summary__products">
+									<div class="summary__product product">
+										<div class="product__img">
+											<img src="img/green_capsicum.jpg" alt="Green Capsicum">
+										</div>
+										<h3 class="product__name">Green Capsicum</h3>
+										<div class="product__count">5</div>
+										<div class="product__price price">70.00</div>
+									</div>
+									<div class="summary__product product">
+										<div class="product__img">
+											<img src="img/red_capsicum.jpg" alt="Red Capsicum">
+										</div>
+										<h3 class="product__name">Red Capsicum</h3>
+										<div class="product__count">1</div>
+										<div class="product__price price">14.00</div>
+									</div>
+								</div>
+								<div class="summary__summation summation">
+									<div class="summation__row-wrapper">
+										<div class="summation__row">
+											<h3 class="summation__label">Subtotal</h3>
+											<div class="summation__price price">84.00</div>
+										</div>
+									</div>
+									<div class="summation__row-wrapper">
+										<div class="summation__row">
+											<h3 class="summation__label">Shipping</h3>
+											<div class="summation__price price price--free">Free</div>
+										</div>
+									</div>
+									<div class="summation__row-wrapper">
+										<div class="summation__row summation__row--total">
+											<h3 class="summation__label">Total</h3>
+											<div class="summation__price price">84.00</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order__payment payment">
+								<h2 class="payment__title title">Payment Method</h2>
+								<div class="payment__methods">
+									<label class="payment__method">
+										<span>Cash on Delivery</span>
+										<input checked type="radio" name="form[radio]">
+									</label>
+									<label class="payment__method">
+										<span>Paypal</span>
+										<input type="radio" name="form[radio]">
+									</label>
+									<label class="payment__method">
+										<span>Amazon Pay</span>
+										<input type="radio" name="form[radio]">
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="order__submit-btn">Place Order</button>
+						</div>
+					</form>
+				</div>
+			</main>
+			<footer class="footer">
+				<h2 class="footer__title title">footer</h2>
+			</footer>
+		</div>
+	</body>
+</html>
